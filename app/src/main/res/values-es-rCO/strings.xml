@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">colores</string>
+    <string name="black">negro</string>
+    <string name="Red">rojo</string>
+    <string name="Green">verde</string>
+    <string name="blue">azul</string>
+    <string name="brown">cafe</string>
+    <string name="white">blanco</string>
+    <string name="yellow">amarillo</string>
+</resources>
