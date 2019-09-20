@@ -2,18 +2,19 @@ package com.example.colorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SeekBar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
     //1,initialize components ->
 
-    private SeekBar sbrRed =Null;
-    private SeekBar sbrGreen =Null;
-    private SeekBar sbrBlue =Null;
-    private SeekBar sbrAlpha =Null;
-    private View vieColors =Null;
+    private SeekBar sbrRed =null;
+    private SeekBar sbrGreen =null;
+    private SeekBar sbrBlue =null;
+    private SeekBar sbrAlpha =null;
+    private View vieColors =null;
 
 
     @Override
@@ -30,8 +31,36 @@ public class MainActivity extends AppCompatActivity {
         //3. Enable view component as ContextMenu.
 
         registerForContextMenu(vieColors);
+        //4. Get SeekBar progress =>value
+       sbrRed.setOnSeekBarChangeListener(this);
+       sbrGreen.setOnSeekBarChangeListener(this);
+       sbrBlue.setOnSeekBarChangeListener(this);
+       sbrAlpha.setOnSeekBarChangeListener(this);
 
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int i, boolean bo) {
+        //5. change colors
+            int r =sbrRed.getProgress();
+            int g =sbrGreen.getProgress();
+            int b =sbrBlue.getProgress();
+            int a =sbrAlpha.getProgress();
+
+            int colorHex= Color.argb(a,r,g,b);
+            vieColors.setBackgroundColor(colorHex);
 
 
     }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+
+    }
+    //change colors
 }
