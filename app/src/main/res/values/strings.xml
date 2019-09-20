@@ -7,4 +7,9 @@
     <string name="yellow">yellow</string>
     <string name="brown">brown</string>
     <string name="black">black</string>
+    <string name="alpha">alpha</string>
+    <string name="magenta">magenta</string>
+    <string name="cyam">cyam</string>
+    <string name="transparent">transparent</string>
+    <string name="semitransparent">semitransparent</string>
 </resources>

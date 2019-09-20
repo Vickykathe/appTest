@@ -8,4 +8,12 @@
     <string name="brown">cafe</string>
     <string name="white">blanco</string>
     <string name="yellow">amarillo</string>
+    <string name="alpha">alpha</string>
+    <string name="magenta">magenta</string>
+    <string name="cyam">azul claro</string>
+    <string name="transparent">transparente</string>
+    <string name="semitransparent">semitransparente</string>
+
+
+
 </resources>

@@ -6,10 +6,11 @@
     <item android:id="@+id/black" android:title="@string/black"/>
     <item android:id="@+id/iteYellow" android:title="@string/yellow"/>
     <item android:id="@+id/iteWhite" android:title="@string/white"/>
-    <item android:id="@+id/iteMagenta" android:title="@string/Magenta"/>
+    <item android:id="@+id/iteMagenta" android:title="@string/magenta"/>
     <item android:id="@+id/iteBrown" android:title="@string/brown"/>
-    <item android:id="@+id/iteCyan" android:title="@string/Cyan"/>
-    <item android:id="@+id/iteSemitransparent" android:title="@string/Semitransparent"/>
-    <item android:id="@+id/iteTransparent" android:title="@string/Transparent"/>
+    <item android:id="@+id/iteCyan" android:title="@string/cyam"/>
+    <item android:id="@+id/iteSemitransparent" android:title="@string/semitransparent"/>
+    <item android:id="@+id/iteTransparent" android:title="@string/transparent"/>
+    <item android:id="@+id/iteAlpha" android:title="@string/alpha"/>
 
 </menu>
