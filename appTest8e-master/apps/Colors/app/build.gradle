@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.colorapp"
+        applicationId "com.example.colors"
         minSdkVersion 15
         targetSdkVersion 29
         versionCode 1
@@ -21,32 +21,9 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-}
-
-buildscript {
-    repositories {
-        google()
-        jcenter()
-
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
-    }
-}
-
-allprojects{
-    repositories{
-        google()
-        jcenter()
-    }
-}
-
-task clean(type: Delete){
-    delete rootProject.buildDir
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 }
